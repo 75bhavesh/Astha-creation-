@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Checkout</title>
+<style>
+body{
+font-family:Arial;
+background:#fff8f2;
+padding:20px;
+}
+
+input,textarea{
+width:100%;
+padding:10px;
+margin:10px 0;
+}
+
+button{
+background:#25D366;
+color:white;
+padding:15px;
+border:none;
+border-radius:10px;
+}
+</style>
+</head>
+<body>
+
+<h1>Checkout</h1>
+
+<input id="name" placeholder="Full Name">
+
+<input id="phone" placeholder="Phone Number">
+
+<textarea id="address"
+placeholder="Full Address"></textarea>
+
+<button onclick="sendOrder()">
+Place COD Order
+</button>
+
+<script>
+
+function sendOrder(){
+
+let name =
+document.getElementById("name").value;
+
+let phone =
+document.getElementById("phone").value;
+
+let address =
+document.getElementById("address").value;
+
+let msg =
+`New COD Order
+
+Name: ${name}
+
+Phone: ${phone}
+
+Address: ${address}`;
+
+window.open(
+`https://wa.me/917038893555?text=${encodeURIComponent(msg)}`
+);
+
+}
+
+</script>
+
+</body>
+</html>
