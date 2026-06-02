@@ -1,85 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aastha Creation | Handmade Candles</title>
 
-    <div class="products">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
 
-        <div class="card">
-            <img src="IMG_20260602_192540_796.jpg" alt="">
-            <h3>Rose Candles</h3>
-            <p>Elegant handcrafted rose-shaped candles.</p>
-        </div>
+body{
+    background:#fff8f2;
+    color:#333;
+}
 
-        <div class="card">
-            <img src="IMG_20260602_193615_987.jpg" alt="">
-            <h3>Bouquet Candles</h3>
-            <p>Beautiful  bouquet candles for gifting.</p>
-        </div>
+header{
+    background:linear-gradient(135deg,#f6c7d2,#fff8f2);
+    text-align:center;
+    padding:80px 20px;
+}
 
-        <div class="card">
-            <img src="IMG_20260602_192459_653.jpg" alt="">
-            <h3>Custom Orders</h3>
-            <p>Personalized candles for birthdays and weddings.</p>
-        </div>
+header h1{
+    font-size:3rem;
+    color:#e78ca8;
+}
 
-    </div>
-</section>
-          <div class="feature">
-            <h3>Premium Quality</h3>
-            <p>Made using quality wax and materials.</p>
-        </div>
+header p{
+    margin-top:15px;
+    font-size:1.2rem;
+}
 
-        <div class="feature">
-            <h3>Custom Designs</h3>
-            <p>Personalized candles for any event.</p>
-        </div>
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#e78ca8;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+}
 
-        <div class="feature">
-            <h3>Perfect Gifts</h3>
-            <p>Ideal for birthdays, weddings and festivals.</p>
-        </div>
+.logo{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+    margin:0 auto 20px;
+}
 
-    </div>
-</section>
+section{
+    padding:60px 10%;
+}
 
-<section id="contact">
-    <h2 class="section-title">Contact Us</h2>
+.section-title{
+    text-align:center;
+    color:#e78ca8;
+    margin-bottom:40px;
+    font-size:2rem;
+}
 
-    <div class="contact">
-        <a class="call-btn" href="tel:+917038893555"
-            href="tel:+917038893555"
-         style="background:#0A66C2;
+.about{
+    max-width:800px;
+    margin:auto;
+    text-align:center;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.card h3{
+    margin:15px 0;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.feature{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.contact{
+    text-align:center;
+}
+
+.call-btn{
+    display:inline-block;
+    background:#0A66C2;
     color:white;
     padding:12px 24px;
     border-radius:30px;
     text-decoration:none;
     font-weight:bold;
-    margin-top:15px;">
-            📞Call Now
-        </a>
-<a class="btn"
+    margin:10px;
+}
+
+.instagram-btn{
+    display:inline-block;
+    background:#E1306C;
+    color:white;
+    padding:12px 24px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    margin:10px;
+}
+
+.whatsapp-btn{
+    display:inline-block;
+    background:#25D366;
+    color:white;
+    padding:12px 24px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    margin:10px;
+}
+
+footer{
+    background:#e78ca8;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    padding:15px 20px;
+    border-radius:50px;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<img src="logo.png" alt="Aastha Creation Logo" class="logo">
+
+<h1>Aastha Creation</h1>
+
+<p>Beautiful Handmade Candles Crafted With Love</p>
+
+<a href="#contact" class="btn">Order Now</a>
+
+</header>
+
+<section>
+
+<h2 class="section-title">About Us</h2>
+
+<div class="about">
+<p>
+Aastha Creation specializes in handmade decorative candles,
+gift candles, rose candles, tulip candles, teddy candles,
+and customized candle gifts for every special occasion.
+</p>
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Our Products</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="IMG_20260602_192540_796.jpg" alt="">
+<h3>Rose Candles</h3>
+<p>Elegant handcrafted rose-shaped candles.</p>
+</div>
+
+<div class="card">
+<img src="IMG_20260602_193615_987.jpg" alt="">
+<h3>Bouquet Candles</h3>
+<p>Beautiful bouquet candles for gifting.</p>
+</div>
+
+<div class="card">
+<img src="IMG_20260602_192459_653.jpg" alt="">
+<h3>Custom Orders</h3>
+<p>Personalized candles for birthdays and weddings.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="features">
+
+<div class="feature">
+<h3>Premium Quality</h3>
+<p>Made using quality wax and materials.</p>
+</div>
+
+<div class="feature">
+<h3>Custom Designs</h3>
+<p>Personalized candles for any event.</p>
+</div>
+
+<div class="feature">
+<h3>Perfect Gifts</h3>
+<p>Ideal for birthdays, weddings and festivals.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact Us</h2>
+
+<div class="contact">
+
+<a class="call-btn" href="tel:+917038893555">
+📞 Call Now
+</a>
+
+<a class="instagram-btn"
 href="https://www.instagram.com/_aasthacreation_29?igsh=aHdueTdhanFtejN4"
 target="_blank">
-Follow Us on Instagram
+Instagram
 </a>
-        <a class="btn" href="https://wa.me/91YOURNUMBER"
-         href="https://wa.me/91YOURNUMBER"
-style="background:#25D366;color:white;padding:12px 24px;border-radius:30px;text-decoration:none;">
-    Order on WhatsApp
-        </a>
-            
-    
-        
-        
-    </div>
+
+<a class="whatsapp-btn"
+href="https://wa.me/917038893555"
+target="_blank">
+Order on WhatsApp
+</a>
+
+</div>
 
 </section>
 
 <footer>
-    © 2026 Aastha Creation. All Rights Reserved.
-    Create by patilbhavesh__
+© 2026 Aastha Creation. All Rights Reserved.<br>
+Created by patilbhavesh__
 </footer>
 
-<a class="whatsapp" href="https://whatsapp.com/dl/">
-    WhatsApp
+<a class="whatsapp"
+href="https://wa.me/917038893555"
+target="_blank">
+WhatsApp
 </a>
 
 </body>
-  </html>
+    </html>
