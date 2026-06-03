@@ -3,84 +3,147 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Candles | Aastha Creation</title>
+<title>Candle Collection | Aastha Creation</title>
 
 <style>
 body{
     font-family:Arial,sans-serif;
     background:#fff8f2;
+    margin:0;
     padding:20px;
 }
 
 h1{
     text-align:center;
     color:#e78ca8;
+    margin-bottom:30px;
 }
 
 .products{
     display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:20px;
 }
 
 .card{
     background:white;
-    padding:15px;
     border-radius:15px;
-    text-align:center;
-    box-shadow:0 4px 12px rgba(0,0,0,.08);
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
 }
 
 .card img{
     width:100%;
-    border-radius:10px;
+    height:250px;
+    object-fit:cover;
+}
+
+.details{
+    padding:15px;
+    text-align:center;
 }
 
 .price{
     color:#e78ca8;
-    font-size:20px;
+    font-size:22px;
     font-weight:bold;
+    margin:10px 0;
 }
 
 .btn{
-    display:inline-block;
-    margin-top:10px;
-    padding:10px 20px;
     background:#e78ca8;
     color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:25px;
+    cursor:pointer;
+    width:100%;
+}
+
+.back{
+    display:inline-block;
+    margin-bottom:20px;
     text-decoration:none;
+    color:white;
+    background:#e78ca8;
+    padding:10px 20px;
     border-radius:25px;
 }
 </style>
-
 </head>
+
 <body>
+
+<a href="index.html" class="back">← Back To Home</a>
 
 <h1>🕯️ Candle Collection</h1>
 
 <div class="products">
 
 <div class="card">
-<img src="IMG_20260602_192459_653.jpg">
-<h3>Rose Candle</h3>
-<p class="price">₹199</p>
-<a class="btn" href="Cart.html">Add To Cart</a>
+<img src="pot-candle.jpg" alt="Pot Candle">
+<div class="details">
+<h3>Pot Candle</h3>
+<p class="price">₹100</p>
+<button class="btn">Add To Cart</button>
+</div>
 </div>
 
 <div class="card">
-<img src="IMG_20260602_192540_796.jpg">
-<h3>Bouquet Candle</h3>
-<p class="price">₹299</p>
-<a class="btn" href="Cart.html">Add To Cart</a>
+<img src="icecream-candle.jpg" alt="Ice Cream Candle">
+<div class="details">
+<h3>Ice Cream Candle</h3>
+<p class="price">₹250</p>
+<button class="btn">Add To Cart</button>
+</div>
 </div>
 
 <div class="card">
-<img src="IMG_20260602_193615_987.jpg">
-<h3>Decorative Candle</h3>
-<p class="price">₹249</p>
-<a class="btn" href="Cart.html">Add To Cart</a>
+<img src="box-jar-candle.jpg" alt="Box Jar Candle">
+<div class="details">
+<h3>Box Jar Candle</h3>
+<p class="price">₹180</p>
+<button class="btn">Add To Cart</button>
+</div>
+</div>
+
+<div class="card">
+<img src="glass-jar-candle.jpg" alt="Glass Jar Candle">
+<div class="details">
+<h3>Glass Jar Candle</h3>
+<p class="price">₹250</p>
+<button class="btn">Add To Cart</button>
+</div>
+</div>
+
+<div class="card">
+<img src="lotus-pot-candle.jpg" alt="Lotus Pot Candle">
+<div class="details">
+<h3>Lotus Pot Candle</h3>
+<p class="price">₹150</p>
+<button class="btn">Add To Cart</button>
+</div>
+</div>
+
+<div class="card">
+<img src="teddy-bear-candle.jpg" alt="Teddy Bear Candle">
+<div class="details">
+<h3>Teddy Bear Candle</h3>
+<p class="price">₹140</p>
+<button class="btn">Add To Cart</button>
+</div>
+</div>
+
+<div class="card">
+<img src="gift-candle.jpg" alt="Gift Candle">
+<div class="details">
+<h3>Gift Candle</h3>
+<p class="price">₹30</p>
+<button class="btn">Add To Cart</button>
+</div>
 </div>
 
 </div>
 
 </body>
-</html>
+    </html>
