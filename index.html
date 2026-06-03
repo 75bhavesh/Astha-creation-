@@ -139,16 +139,18 @@ body{
 </head>
 
 <body>
-
-<div class="header">
-    <img src="logo.png" class="logo">
-    <input type="text" class="search" placeholder="Search products...">
-</div>
-
 <div class="banner">
     <h1>Aastha Creation</h1>
     <p>Handmade Candles • Flowers • Aari Work</p>
 </div>
+<div class="header">
+    <img src="logo.png" class="logo">
+    <input type="text" id="searchBox" class="search"
+placeholder="Search products..."
+onkeyup="searchProducts()">
+</div>
+
+
 
 <div class="categories">
 
@@ -205,6 +207,21 @@ body{
 <a href="https://wa.me/YOURNUMBER" class="whatsapp">
 WhatsApp
 </a>
+<script>
+function searchProducts() {
+    let input = document.getElementById("searchBox").value.toLowerCase();
+    let cards = document.querySelectorAll(".card");
 
+    cards.forEach(card => {
+        let text = card.innerText.toLowerCase();
+
+        if(text.includes(input)){
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+    });
+}
+                       </script>
 </body>
     </html>
