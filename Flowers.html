@@ -1,70 +1,275 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Flowers</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aastha Creation | Flower Decoration</title>
+
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
 body{
-font-family:Arial;
 background:#fff8f2;
 padding:20px;
+}
+
+.back-btn{
+display:inline-block;
+background:#e78ca8;
+color:white;
+padding:10px 20px;
+border-radius:25px;
+text-decoration:none;
+margin-bottom:20px;
 }
 
 h1{
 text-align:center;
 color:#e78ca8;
+margin-bottom:30px;
+}
+
+.category{
+margin-top:50px;
+}
+
+.category h2{
+color:#e78ca8;
+margin-bottom:20px;
+border-bottom:2px solid #e78ca8;
+padding-bottom:10px;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
 .card{
 background:white;
 padding:15px;
-margin-bottom:20px;
 border-radius:15px;
-box-shadow:0 4px 12px rgba(0,0,0,.08);
+box-shadow:0 4px 12px rgba(0,0,0,.1);
 text-align:center;
 }
 
-img{
+.card img{
 width:100%;
+height:250px;
+object-fit:cover;
 border-radius:10px;
+background:#f5f5f5;
+}
+
+.card h3{
+margin:15px 0 10px;
 }
 
 .price{
-font-size:20px;
+font-size:18px;
 font-weight:bold;
 color:#e78ca8;
+margin-bottom:15px;
 }
 
-.btn{
+.order-btn{
 display:inline-block;
+background:#25D366;
+color:white;
 padding:10px 20px;
+border-radius:25px;
+text-decoration:none;
+font-weight:bold;
+}
+
+footer{
+margin-top:50px;
+text-align:center;
+padding:20px;
 background:#e78ca8;
 color:white;
-text-decoration:none;
-border-radius:25px;
+border-radius:15px;
 }
+
 </style>
 </head>
 
 <body>
 
-<h1>🌸 Flower Collection</h1>
+<a href="index.html" class="back-btn">← Back To Home</a>
+
+<h1>🌸 Flower Decoration Collection</h1>
+
+<!-- SAPTAPADI -->
+
+<div class="category">
+<h2>🌺 Saptapadi Decoration</h2>
+
+<div class="products">
 
 <div class="card">
-<img src="IMG_20260604_113947_915.jpg">
-<p class="price">₹3999</p>
-<a class="btn" href="Cart.html">Add To Cart</a>
+<img src="saptapadi1.jpg" alt="">
+<h3>Traditional Saptapadi Setup</h3>
+<p class="price">Starting from ₹2500</p>
+<a class="order-btn"
+href="https://wa.me/917038893555?text=Hi%20Aastha%20Creation,%0A%0AI%20would%20like%20to%20book:%0A%0AService:%20Traditional%20Saptapadi%20Setup%0A%0AMy%20Details:%0AName:%20%0AContact%20Number:%20%0AAddress:%20%0AEvent%20Date:%20%0A%0APlease%20share%20payment%20and%20booking%20details.%0A%0AThank%20you."
+target="_blank">
+Book Now
+</a>
 </div>
-  <div class="card">
-<img src="IMG_20260604_113944_713.jpg">
-<p class="price">₹2999</p>
-<a class="btn" href="Cart.html">Add To Cart</a>
-  </div>
 
 <div class="card">
-<img src="product-jpeg.jpg">
-<p class="price">₹5999</p>
-<a class="btn" href="Cart.html">Add To Cart</a>
+<img src="saptapadi2.jpg" alt="">
+<h3>Premium Floral Saptapadi</h3>
+<p class="price">Starting from ₹5000</p>
+<a class="order-btn"
+href="https://wa.me/917038893555"
+target="_blank">
+Book Now
+</a>
 </div>
+
+</div>
+</div>
+
+<!-- PUJA -->
+
+<div class="category">
+<h2>🙏 Puja Decoration</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="puja1.jpg" alt="">
+<h3>Temple Flower Decoration</h3>
+<p class="price">Starting from ₹1000</p>
+<a class="order-btn"
+href="https://wa.me/917038893555"
+target="_blank">
+Book Now
+</a>
+</div>
+
+<div class="card">
+<img src="puja2.jpg" alt="">
+<h3>Festival Puja Setup</h3>
+<p class="price">Starting from ₹2000</p>
+<a class="order-btn"
+href="https://wa.me/917038893555"
+target="_blank">
+Book Now
+</a>
+</div>
+
+</div>
+</div>
+
+<!-- BRIDAL ENTRY -->
+
+<div class="category">
+<h2>👰 Bridal Entry</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="bridal1.jpg" alt="">
+<h3>Flower Chadar Entry</h3>
+<p class="price">Starting from ₹3500</p>
+<a class="order-btn"
+href="https://wa.me/917038893555"
+target="_blank">
+Book Now
+</a>
+</div>
+
+<div class="card">
+<img src="bridal2.jpg" alt="">
+<h3>Royal Bridal Entry</h3>
+<p class="price">Starting from ₹7000</p>
+<a class="order-btn"
+href="https://wa.me/917038893555"
+target="_blank">
+Book Now
+</a>
+</div>
+
+</div>
+</div>
+
+<!-- BABY ENTRY -->
+
+<div class="category">
+<h2>👶 Baby Entry</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="baby1.jpg" alt="">
+<h3>Baby Welcome Decoration</h3>
+<p class="price">Starting from ₹1500</p>
+<a class="order-btn"
+href="https://wa.me/917038893555"
+target="_blank">
+Book Now
+</a>
+</div>
+
+<div class="card">
+<img src="baby2.jpg" alt="">
+<h3>Premium Baby Entry Setup</h3>
+<p class="price">Starting from ₹3000</p>
+<a class="order-btn"
+href="https://wa.me/917038893555"
+target="_blank">
+Book Now
+</a>
+</div>
+
+</div>
+</div>
+
+<!-- BED DECORATION -->
+
+<div class="category">
+<h2>🛏️ Bed Decoration</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="bed1.jpg" alt="">
+<h3>Romantic Bed Decoration</h3>
+<p class="price">Starting from ₹2000</p>
+<a class="order-btn"
+href="https://wa.me/917038893555"
+target="_blank">
+Book Now
+</a>
+</div>
+
+<div class="card">
+<img src="bed2.jpg" alt="">
+<h3>Luxury Rose Bed Decoration</h3>
+<p class="price">Starting from ₹5000</p>
+<a class="order-btn"
+href="https://wa.me/917038893555"
+target="_blank">
+Book Now
+</a>
+</div>
+
+</div>
+</div>
+
+<footer>
+© 2026 Aastha Creation | Flower Decoration Services
+</footer>
 
 </body>
-</html>
+  </html>
